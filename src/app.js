@@ -81,7 +81,8 @@ app.get('/weather', (req, res) => {
 
             res.send({
                 forecast: forecastData.foreCast,
-                temperature: forecastData.temperature
+                temperature: forecastData.temperature,
+                foreCastData: forecastData
         
             })
         })

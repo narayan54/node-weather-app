@@ -25,8 +25,8 @@ request({ url, json: true}, (error, {body}) => {
                 foreCast: foreCast
 
             }
-            callback(undefined, result);
-            //console.log(foreCast + '. It is currently ' + temparature + ' degrees out. It feels like ' + feelLike + ' degreeos out.');
+            callback(undefined, result.foreCast + '. It is currently ' + result.temperature + ' degrees out. It feels like ' + result.feelLike + ' degrees out.');
+            //console.log();
        }
     });
 }
